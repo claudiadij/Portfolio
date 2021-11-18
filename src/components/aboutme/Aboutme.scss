@@ -1,0 +1,112 @@
+.aboutme{
+    background-color: black;
+    display: flex;
+    border-top: 10px solid #689AA9;
+    border-bottom: 10px solid #FC742B;
+
+    .left{
+        flex: 0.4;
+        overflow: hidden;
+        margin-top: 15%;
+        margin-right: 30px;
+        margin-left: 90px;
+        justify-content: center;
+        align-items: center;
+
+        .imgContainer{
+            
+            background-color: #689AA9;
+            border-radius: 50%;
+            border: 10px solid #689AA9;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+            img{
+                height: 100%;
+            }
+        }
+    }
+
+    .right{
+        background-color: black;
+        flex: 0.6;
+        position: relative;
+        margin-left: 120px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .title{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+
+            h1{
+                font-size: 90px;
+                color: white;
+                margin-bottom: 10px;
+                display: flex;
+                flex-direction: row;
+
+                .hyphen{
+                    color: #689AA9;
+                }
+            }
+
+            h2{
+                font-size: 40px;
+                color: #689AA9;
+
+                span{
+                    font-size: inherit;
+                    color: #689AA9;
+                }
+
+                .ityped-cursor {
+                    animation: blink 1s infinite;
+                  }
+          
+                  @keyframes blink {
+                      50%{
+                          opacity: 1;
+                      }
+                      100%{
+                          opacity: 0;
+                      }  
+                }
+            }
+
+            p{
+                margin-top: 50px;
+                font-size: 30px;
+                font-weight: 5px;
+                line-height: 50px;
+                color: white;
+            }
+
+            button{
+                border-radius: 4px;
+                background-color: #689AA9;
+                white-space: nowrap;
+                padding: 15px 64px;
+                margin-top: 30px;
+                color: #fff;
+                font-size: 35px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+              
+                &:hover {
+                  transition: all 0.3s ease-out;
+                  background: #fff;
+                  background-color: black;
+                  border: 4px solid #689AA9;
+                }
+            }
+        }
+    }
+}

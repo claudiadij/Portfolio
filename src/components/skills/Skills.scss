@@ -1,0 +1,57 @@
+.skills{
+    background-color: white;
+    display: flex;
+    border-top: 10px solid #FC742B;
+    border-bottom: 10px solid #DD619B;
+
+    .left{
+        flex: 0.5;
+        overflow: hidden;
+        margin-top: 15%;
+        margin-right: 30px;
+        margin-left: 90px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .right{
+        background-color: black;
+        flex: 0.5;
+        position: relative;
+        padding-left: 120px;
+        padding-right: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+        color:white;
+        list-style: none;
+
+        .bars li{
+            margin: 10px 0;
+        }
+
+        .bar{
+            margin-top: 13px;
+            margin-bottom: 20px;
+            background:#FC742B;
+            display: block;
+            height: 2px;
+            border: 3px solid rgba(0,0,0,0.3);
+            border-radius: 3px;
+            overflow: hidden;
+            box-shadow: 0 0 10px white;
+        }
+
+        .bar span{
+            height: 2px;
+            float: left;
+            background: white;
+        }
+
+        .python {
+            width: 90%
+        }
+
+    }
+}
