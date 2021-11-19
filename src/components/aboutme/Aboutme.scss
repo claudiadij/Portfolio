@@ -1,8 +1,15 @@
+@import "../../Global.scss";
+
 .aboutme{
     background-color: black;
     display: flex;
     border-top: 10px solid #689AA9;
-    border-bottom: 10px solid #FC742B;
+    border-bottom: 10px solid #F2C36B;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
 
     .left{
         flex: 0.4;
@@ -13,8 +20,13 @@
         justify-content: center;
         align-items: center;
 
+        @include mobile{
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 160px;
+        }
+
         .imgContainer{
-            
             background-color: #689AA9;
             border-radius: 50%;
             border: 10px solid #689AA9;
@@ -22,8 +34,20 @@
             align-items: flex-end;
             justify-content: center;
 
+            @include mobile{
+                align-items: flex-start;
+                border: 5px solid #689AA9;
+                margin-bottom: 0;
+            }
+
             img{
                 height: 100%;
+
+                @include mobile{
+                    height: 150px;
+                    width: 150px;
+                    margin-bottom: 0;
+                }
             }
         }
     }
@@ -37,13 +61,18 @@
         display: flex;
         flex-direction: column;
 
+        @include mobile{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
         .title{
             width: 100%;
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            margin-top: 100px;
+            margin-top: 50px;
 
             h1{
                 font-size: 90px;
@@ -68,15 +97,15 @@
 
                 .ityped-cursor {
                     animation: blink 1s infinite;
-                  }
+                }
           
-                  @keyframes blink {
-                      50%{
-                          opacity: 1;
-                      }
-                      100%{
-                          opacity: 0;
-                      }  
+                @keyframes blink {
+                    50%{
+                        opacity: 1;
+                    }
+                    100%{
+                        opacity: 0;
+                    }  
                 }
             }
 

@@ -1,5 +1,159 @@
-@import "../../Global.scss";
-
 .experience{
-    background-color: $mainColor;
+    background-color: black;
+    border-top: 10px solid #F2C36B;
+    border-bottom: 10px solid #FC742B; 
+
+    .title{
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+        h1{
+            font-size: 90px;
+            color: white;
+            display: flex;
+            flex-direction: row;
+
+            .hyphen{
+                color: #F2C36B;
+            }
+        }
+
+        h2{
+            font-size: 40px;
+            color: #F2C36B;
+
+            span{
+                font-size: inherit;
+                color: #F2C36B;
+            }
+
+            .ityped-cursor {
+                animation: blink 1s infinite;
+            }
+      
+            @keyframes blink {
+                50%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                }  
+            }
+        }
+        
+    }
+
+    .body{
+        display: grid;
+        box-sizing: border-box;
+        display: grid;
+        place-items: center center;
+
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+        padding: 20px;
+        grid-gap: 40px;
+        height: 670px;
+    }
+
+    .card{
+        background-color: #F2C36B;
+        border-radius: 20px;
+        box-shadow: 0 0 30px (0,0,0,0.18);
+
+        &:hover {
+            transition: all 0.3s ease-out;
+            background: #fff;
+            background-color: black;
+            border: 4px solid #F2C36B;
+            cursor: pointer;
+        }
+    }
+
+    .container{
+        position: relative;
+        clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+    }
+
+    img{
+        width: 100%;
+        display: block;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .container:after{
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 20px 20px 0 0;
+        opacity: 0.7;
+    }
+    .card1>.container:after{
+        background-image: linear-gradient(
+            135deg,
+            #ffac1d5e,
+            #f84f1c62
+        );
+    }
+    .card2>.container:after{
+        background-image: linear-gradient(
+            135deg,
+            #ffac1d5e,
+            #f84f1c62
+        );
+    }
+    .card3>.container:after{
+        background-image: linear-gradient(
+            135deg,
+            #ffac1d5e,
+            #f84f1c62
+        );
+    }
+    .details{
+        padding: 20px 10px;
+    }
+    .details>h3{
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 30px;
+        margin: 0 0 15px 0;
+    }
+    .details>p{
+        color: #eeeeee;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+    }
+
+    button{
+        border-radius: 4px;
+        background-color: #F2C36B;
+        white-space: nowrap;
+        padding: 15px 64px;
+        margin-top: 10px;
+        color: #fff;
+        font-size: 35px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      
+        &:hover {
+          transition: all 0.3s ease-out;
+          background: #fff;
+          background-color: black;
+          border: 4px solid #F2C36B;
+        }
+    }
+
 }

@@ -34,7 +34,7 @@ export default function Aboutme() {
                         <span ref={textRef}/>
                     </h2>
                     <p>
-                        I am a first generation Romanian/Greek American based in New Britain, Connecticut. 
+                        I am a first generation Romanian/Greek American based in New Britain, Connecticut. This past August, I graduated from the University of Connecticut and then spent the following three months attending the Coding Temple Bootcamp. 
                         I started off with a passion in graphic design. While working in graphic design, I was tasked with building websites. My enjoyment for improving websites became a new space for me to express my creativity.
                     </p>
                     <p>
