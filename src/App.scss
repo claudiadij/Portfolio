@@ -1,3 +1,5 @@
+@import "./Global.scss";
+
 .app{
     height: 100vh;
 
@@ -18,6 +20,12 @@
             width: 100vw;
             height: calc(100vh - 70px);
             scroll-snap-align: start;
+
+            @include mobile{
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: wrap;
+            }
         }
     }
 }
